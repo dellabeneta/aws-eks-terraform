@@ -1,19 +1,19 @@
 variable "project_name" {
   type        = string
-  description = "Project name to be used to name the resources (Name tag)"
+  description = "Nome do projeto que pode ser usado nas tags de nome (Name tag)"
 }
 
 variable "tags" {
   type        = map(any)
-  description = "Tags to be added to AWS resources"
+  description = "Tags para serem adicionadas aos recursos"
 }
 
 variable "oidc" {
   type        = string
-  description = "HTTPS URL from OIDC provider of the EKS cluster"
+  description = "URL HTTPS do provedor OIDC do cluster EKS"
 }
 
 variable "cluster_name" {
   type        = string
-  description = "EKS cluster name"
+  description = "Nome do CLuster EKS"
 }

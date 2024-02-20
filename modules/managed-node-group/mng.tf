@@ -2,6 +2,7 @@ resource "aws_eks_node_group" "eks_managed_node_group" {
   cluster_name    = var.cluster_name
   node_group_name = "${var.project_name}-nodegroup"
   node_role_arn   = aws_iam_role.eks_mng_role.arn
+  instance_types  = ["var.instance_types"]
   subnet_ids = [
     var.subnet_private_1a,
     var.subnet_private_1b
@@ -14,9 +15,9 @@ resource "aws_eks_node_group" "eks_managed_node_group" {
   )
 
   scaling_config {
-    desired_size = 1
-    max_size     = 1
-    min_size     = 1
+    desired_size = var.desired_size
+    max_size     = var.max_size
+    min_size     = var.min_size
   }
 
   depends_on = [

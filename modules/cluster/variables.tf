@@ -1,19 +1,19 @@
 variable "project_name" {
   type        = string
-  description = "Project name to be used to name the resources (Name tag)"
+  description = "Nome do projeto que pode ser usado nas tags de nome (Name tag)"
 }
 
 variable "tags" {
   type        = map(any)
-  description = "Tags to be added to AWS resources"
+  description = "Tags para serem adicionadas aos recursos"
 }
 
-variable "public_subnet_1a" {
+variable "subnet_public_1a" {
   type        = string
-  description = "Subnet to create EKS cluster AZ 1a"
+  description = "Sub-rede para criar o cluster EKS na AZ 1a"
 }
 
-variable "public_subnet_1b" {
+variable "subnet_public_1b" {
   type        = string
-  description = "Subnet to create EKS cluster AZ 1b"
+  description = "Sub-rede para criar o cluster EKS na AZ 1b"
 }
