@@ -7,9 +7,9 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
-| <a name="provider_helm"></a> [helm](#provider\_helm) | n/a |
-| <a name="provider_kubernetes"></a> [kubernetes](#provider\_kubernetes) | n/a |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.37.0 |
+| <a name="provider_helm"></a> [helm](#provider\_helm) | 2.12.1 |
+| <a name="provider_kubernetes"></a> [kubernetes](#provider\_kubernetes) | 2.26.0 |
 
 ## Modules
 
@@ -35,6 +35,7 @@ No modules.
 | <a name="input_oidc"></a> [oidc](#input\_oidc) | URL HTTPS do provedor OIDC do cluster EKS | `string` | n/a | yes |
 | <a name="input_project_name"></a> [project\_name](#input\_project\_name) | Nome do projeto que pode ser usado nas tags de nome (Name tag) | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | Tags para serem adicionadas aos recursos | `map(any)` | n/a | yes |
+| <a name="input_teste"></a> [teste](#input\_teste) | n/a | `string` | n/a | yes |
 
 ## Outputs
 
