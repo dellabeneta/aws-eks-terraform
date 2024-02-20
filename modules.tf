@@ -14,8 +14,8 @@ module "eks_cluster" {
   tags             = var.tags
 }
 
-module "eks_managed_node_group" {
-  source            = "./modules/managed-node-group"
+module "eks_node_group" {
+  source            = "./modules/nodegroup"
   cluster_name      = module.eks_cluster.cluster_name
   desired_size      = var.desired_size
   min_size          = var.min_size
@@ -28,7 +28,7 @@ module "eks_managed_node_group" {
 }
 
 module "eks_aws_load_balancer_controller" {
-  source       = "./modules/aws-load-balancer-controller"
+  source       = "./modules/loadbalancer-controller"
   cluster_name = module.eks_cluster.cluster_name
   oidc         = module.eks_cluster.oidc
   project_name = var.project_name

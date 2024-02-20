@@ -1,3 +1,15 @@
+#  Dellabeneta IaC para criação de Cluster EKS
+
+  
+
+####  Observe a necessidade da criação de um .tfvars para os inputs. Deixei disponível neste código três exemplos:
+
+1. env-dev.tfvars --> ambiente de desenvolvimento;
+2. env-hml.tfvars --> ambiente de para homologação com o cliente final;
+3. env-prd.tfvars --> ambiente produtivo final.
+
+####  Observe também a necessidade do backend remoto. Caso opte por essa abordagem. No arquivo provider.tf, irá perceber a existência de um backend remoto configurado. Deixei apenas como exemplo.
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
@@ -15,10 +27,10 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_eks_aws_load_balancer_controller"></a> [eks\_aws\_load\_balancer\_controller](#module\_eks\_aws\_load\_balancer\_controller) | ./modules/aws-load-balancer-controller | n/a |
+| <a name="module_eks_aws_load_balancer_controller"></a> [eks\_aws\_load\_balancer\_controller](#module\_eks\_aws\_load\_balancer\_controller) | ./modules/loadbalancer-controller | n/a |
 | <a name="module_eks_cluster"></a> [eks\_cluster](#module\_eks\_cluster) | ./modules/cluster | n/a |
-| <a name="module_eks_managed_node_group"></a> [eks\_managed\_node\_group](#module\_eks\_managed\_node\_group) | ./modules/managed-node-group | n/a |
 | <a name="module_eks_network"></a> [eks\_network](#module\_eks\_network) | ./modules/network | n/a |
+| <a name="module_eks_node_group"></a> [eks\_node\_group](#module\_eks\_node\_group) | ./modules/nodegroup | n/a |
 
 ## Resources
 
