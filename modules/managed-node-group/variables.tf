@@ -42,3 +42,7 @@ variable "instance_types" {
   type        = string
   description = "Tipo da instancia que sera usada para criacao dos Nodes"
 }
+
+variable "teste" {
+  type = string
+}
