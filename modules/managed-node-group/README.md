@@ -36,7 +36,6 @@ No modules.
 | <a name="input_subnet_private_1a"></a> [subnet\_private\_1a](#input\_subnet\_private\_1a) | Sub-rede para criar o Node na AZ 1a | `string` | n/a | yes |
 | <a name="input_subnet_private_1b"></a> [subnet\_private\_1b](#input\_subnet\_private\_1b) | Sub-rede para criar o Node na AZ 1b | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | Tags para serem adicionadas aos recursos | `map(any)` | n/a | yes |
-| <a name="input_teste"></a> [teste](#input\_teste) | n/a | `string` | n/a | yes |
 
 ## Outputs
 

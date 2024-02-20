@@ -17,7 +17,3 @@ variable "cluster_name" {
   type        = string
   description = "Nome do CLuster EKS"
 }
-
-variable "teste" {
-  type = string
-}

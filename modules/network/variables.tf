@@ -12,7 +12,3 @@ variable "tags" {
   type        = map(any)
   description = "Tags para serem adicionadas aos recursos"
 }
-
-variable "teste" {
-  type = string
-}
