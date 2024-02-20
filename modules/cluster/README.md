@@ -7,8 +7,8 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
-| <a name="provider_tls"></a> [tls](#provider\_tls) | n/a |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.37.0 |
+| <a name="provider_tls"></a> [tls](#provider\_tls) | 4.0.5 |
 
 ## Modules
 
@@ -29,6 +29,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_eks_version"></a> [eks\_version](#input\_eks\_version) | Versao do EKS que sera provisionada na AWS | `string` | n/a | yes |
 | <a name="input_project_name"></a> [project\_name](#input\_project\_name) | Nome do projeto que pode ser usado nas tags de nome (Name tag) | `string` | n/a | yes |
 | <a name="input_subnet_public_1a"></a> [subnet\_public\_1a](#input\_subnet\_public\_1a) | Sub-rede para criar o cluster EKS na AZ 1a | `string` | n/a | yes |
 | <a name="input_subnet_public_1b"></a> [subnet\_public\_1b](#input\_subnet\_public\_1b) | Sub-rede para criar o cluster EKS na AZ 1b | `string` | n/a | yes |

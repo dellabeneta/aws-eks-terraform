@@ -17,3 +17,8 @@ variable "subnet_public_1b" {
   type        = string
   description = "Sub-rede para criar o cluster EKS na AZ 1b"
 }
+
+variable "eks_version" {
+  type        = string
+  description = "Versao do EKS que sera provisionada na AWS"
+}

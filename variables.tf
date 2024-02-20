@@ -37,3 +37,8 @@ variable "instance_types" {
   type        = string
   description = "Tipo da instancia que sera usada para criacao dos Nodes"
 }
+
+variable "eks_version" {
+  type        = string
+  description = "Versao do EKS que sera provisionada na AWS"
+}

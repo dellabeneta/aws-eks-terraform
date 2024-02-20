@@ -7,6 +7,7 @@ module "eks_network" {
 
 module "eks_cluster" {
   source           = "./modules/cluster"
+  eks_version      = var.eks_version
   subnet_public_1a = module.eks_network.subnet_pub_1a
   subnet_public_1b = module.eks_network.subnet_pub_1b
   project_name     = var.project_name
