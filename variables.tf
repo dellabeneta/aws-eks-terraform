@@ -42,3 +42,8 @@ variable "eks_version" {
   type        = string
   description = "Versao do EKS que sera provisionada na AWS"
 }
+
+variable "aws_cli_profile" {
+  type        = string
+  description = "Nome do profile confiogurado na AWS CLI"
+}
