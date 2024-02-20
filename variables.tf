@@ -45,5 +45,5 @@ variable "eks_version" {
 
 variable "aws_cli_profile" {
   type        = string
-  description = "Nome do profile confiogurado na AWS CLI"
+  description = "Nome do profile configurado na AWS CLI localmente em seu PC"
 }
