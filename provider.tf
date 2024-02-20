@@ -2,21 +2,22 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "4.48.0"
+      version = "5.37.0"
     }
     kubernetes = {
       source  = "hashicorp/kubernetes"
-      version = "2.17.0"
+      version = "2.26.0"
     }
     helm = {
       source  = "hashicorp/helm"
-      version = "2.8.0"
+      version = "2.12.1"
     }
   }
 }
 
 provider "aws" {
-  region = var.region
+  //region = var.region
+  profile = "dellabeneta"
 }
 
 provider "kubernetes" {
