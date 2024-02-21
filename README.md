@@ -1,14 +1,16 @@
 #  Dellabeneta IaC para criação de Cluster EKS
 
-  
-
 ####  Observe a necessidade da criação de um .tfvars para os inputs. Deixei disponível neste código três exemplos:
 
 1. env-dev.tfvars --> ambiente de desenvolvimento;
 2. env-hml.tfvars --> ambiente de para homologação com o cliente final;
 3. env-prd.tfvars --> ambiente produtivo final.
 
-####  Observe também a necessidade do backend remoto. Caso opte por essa abordagem. No arquivo provider.tf, irá perceber a existência de um backend remoto configurado. Deixei apenas como exemplo.
+ou seja, quando for rodar o terraform plan ou apply, informe o .tfvars que deseja:
+
+terraform apply -var-file=env-dev.tfvars
+
+####  Observe também a necessidade do backend remoto (deixei no provide.tf apenas como exemplo) e, é claro, configurar o CLI da AWS com seu profile. Você vai precisar informá-lo (o profile) nos tfvars que passarão os inputs.
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
