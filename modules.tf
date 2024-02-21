@@ -28,7 +28,7 @@ module "eks_node_group" {
 }
 
 module "eks_aws_load_balancer_controller" {
-  source       = "./modules/loadbalancer-controller"
+  source       = "./modules/loadbalancer"
   cluster_name = module.eks_cluster.cluster_name
   oidc         = module.eks_cluster.oidc
   project_name = var.project_name
