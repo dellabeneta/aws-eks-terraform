@@ -13,11 +13,12 @@ terraform {
       version = "2.12.1"
     }
   }
+  /*
   backend "s3" {
     bucket = "dellabeneta-eks-backend"
     key    = "dev/terraform.state"
     region = "sa-east-1"
-  }
+  } */
 }
 
 provider "aws" {
