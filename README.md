@@ -114,7 +114,7 @@ module "eks" {
   # Variáveis necessárias (INPUTS)
   aws_profile    = "default"
   region         = "sa-east-1"
-  project_name   = "Marketplace"
+  project_name   = "projeto"
   eks_version    = "1.29"
   cidr_block     = "10.0.0.0/16"
   instance_types = "t3.medium"
