@@ -3,7 +3,7 @@
 
 Este é um código Terraform completo para provisionamento de um Cluster EKS na AWS. Ele contempla Rede, um Node Group, Policies, Roles, Load Balancer Controller e demais configurações necessárias para criação de um cluster 100% operacional. Espero que aproveitem e façam bom uso dessa estrutura.
 
-Todo trabalho não teria sido possível sem o treinamento do [Mateus Muller](https://github.com/mateusmuller), que indico para todos que buscam entender mais sobre módulos no Terraform (https://www.udemy.com/course/terraform-para-aws/?couponCode=24T4FS22124).
+Todo trabalho não teria sido possível sem o treinamento do [Mateus Muller](https://github.com/mateusmuller), que indico para todos que buscam entender mais sobre módulos no Terraform (https://www.udemy.com/course/terraform-para-aws).
 
 Se precisar, pode contatar no Linkedin em: https://www.linkedin.com/in/mdellabeneta/, ficaria muito feliz com o seu contato e contribuição.
 
@@ -89,6 +89,7 @@ No resources.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_aws_profile"></a> [aws\_profile](#input\_aws\_profile) | Nome do profile configurado na AWS CLI localmente em seu PC | `string` | n/a | yes |
+| <a name="input_aws_profile1"></a> [aws\_profile1](#input\_aws\_profile1) | Nome do profile configurado na AWS CLI localmente em seu PC | `string` | n/a | yes |
 | <a name="input_cidr_block"></a> [cidr\_block](#input\_cidr\_block) | IP CIDR que sera usado na VPC | `string` | n/a | yes |
 | <a name="input_desired_size"></a> [desired\_size](#input\_desired\_size) | Valor desejado de Nodes | `number` | n/a | yes |
 | <a name="input_eks_version"></a> [eks\_version](#input\_eks\_version) | Versao do EKS que sera provisionada na AWS | `string` | n/a | yes |
