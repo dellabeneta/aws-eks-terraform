@@ -44,7 +44,7 @@ terraform-supermodule/
 │   │   └── vpc.tf
 │   └── nodegroup
 │       ├── iam.tf
-│       ├── mng.tf
+│       ├── nodegroup.tf
 │       ├── README.md
 │       └── variables.tf
 ├── modules.tf
