@@ -109,15 +109,15 @@ Veja um exemplo de um "main.tf" que você poderia criar para utilizar este proje
 
 ```
 module "eks" {
-  source = "git@github.com:dellabeneta/terraform-supermodule.git?ref=v1.0.0"
+  source = "git@github.com:dellabeneta/terraform-supermodule.git"
 
   # Variáveis necessárias (INPUTS)
-  aws_profile    = "<SEU_PROFILE>"
-  region         = "<REGIÃO>"
-  project_name   = "<NOME_DO_PROJETO>"
-  eks_version    = "<VERSÃO_DO_EKS>"
-  cidr_block     = "<CIDR_PARA_VPC>"
-  instance_types = "<SIZE_DA_EC2>"
+  aws_profile    = "SEU_PROFILE"
+  region         = "REGIÃO"
+  project_name   = "NOME_DO_PROJETO"
+  eks_version    = "VERSÃO_DO_EKS"
+  cidr_block     = "CIDR_PARA_VPC"
+  instance_types = "SIZE_DA_EC2"
   desired_size   = "1"
   min_size       = "1"
   max_size       = "1"
