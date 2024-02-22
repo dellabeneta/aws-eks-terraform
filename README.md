@@ -112,15 +112,15 @@ module "eks" {
   source = "git@github.com:dellabeneta/terraform-supermodule.git?ref=v1.0.0"
 
   # Variáveis necessárias (INPUTS)
-  aws_profile    = "default"
-  region         = "sa-east-1"
-  project_name   = "projeto"
-  eks_version    = "1.29"
-  cidr_block     = "10.0.0.0/16"
-  instance_types = "t3.medium"
+  aws_profile    = "<SEU_PROFILE>"
+  region         = "<REGIÃO>"
+  project_name   = "<NOME_DO_PROJETO>"
+  eks_version    = "<VERSÃO_DO_EKS>"
+  cidr_block     = "<CIDR_PARA_VPC>"
+  instance_types = "<SIZE_DA_EC2>"
   desired_size   = "1"
   min_size       = "1"
-  max_size       = "2"
+  max_size       = "1"
   
 
   # As tags também são variáveis, do tipo map(). Opcionalmente,
