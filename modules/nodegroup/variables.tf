@@ -39,6 +39,6 @@ variable "max_size" {
 }
 
 variable "instance_types" {
+  description = "Tipo da instancia EC2 para os nodes EKS"
   type        = string
-  description = "Tipo da instancia que sera usada para criacao dos Nodes"
 }
