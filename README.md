@@ -75,8 +75,8 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_eks_aws_load_balancer_controller"></a> [eks\_aws\_load\_balancer\_controller](#module\_eks\_aws\_load\_balancer\_controller) | ./modules/loadbalancer | n/a |
 | <a name="module_eks_cluster"></a> [eks\_cluster](#module\_eks\_cluster) | ./modules/cluster | n/a |
+| <a name="module_eks_load_balancer"></a> [eks\_load\_balancer](#module\_eks\_load\_balancer) | ./modules/loadbalancer | n/a |
 | <a name="module_eks_network"></a> [eks\_network](#module\_eks\_network) | ./modules/network | n/a |
 | <a name="module_eks_node_group"></a> [eks\_node\_group](#module\_eks\_node\_group) | ./modules/nodegroup | n/a |
 

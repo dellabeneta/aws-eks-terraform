@@ -27,7 +27,7 @@ module "eks_node_group" {
   tags              = var.tags
 }
 
-module "eks_aws_load_balancer_controller" {
+module "eks_load_balancer" {
   source       = "./modules/loadbalancer"
   cluster_name = module.eks_cluster.cluster_name
   oidc         = module.eks_cluster.oidc
