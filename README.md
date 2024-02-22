@@ -1,6 +1,6 @@
 # Bem-vindo(a) a Super-Módulo para EKS. Espero que aproveitem e façam bom uso dessa estrutura :]
 
-Bem, todo esse trabalho não teria sido possível sem o treinamento facultado através do [Mateus Muller](https://www.linkedin.com/in/mateus-gabriel-m%C3%BCller-790709bb/), treinamento que posso indicar par todos (https://www.udemy.com/course/terraform-para-aws/?couponCode=24T4FS22124)
+Bem, todo esse trabalho não teria sido possível sem o treinamento facultado através do [Mateus Muller](https://github.com/mateusmuller), treinamento que posso indicar par todos (https://www.udemy.com/course/terraform-para-aws/?couponCode=24T4FS22124)
 Que fiquem aqui os devidos créditos!
 
 Este repositório é **público** e quiser contribuir de alguma forma, pode contatar no Linkedin em: https://www.linkedin.com/in/mdellabeneta/, ficaria muito feliz com o seu contato.
@@ -8,7 +8,8 @@ Este repositório é **público** e quiser contribuir de alguma forma, pode cont
 
 Com isso posto, vamos falar um pouco mais do que temos por aqui:
 
-
+```
+della@desklin:~/projetos$ tree terraform-supermodule/
 terraform-supermodule/
 ├── LICENSE
 ├── modules
@@ -50,8 +51,8 @@ terraform-supermodule/
 ├── README.md
 └── variables.tf
 
--- 6 directories, 34 files
-
+6 directories, 34 files
+```
 
 Nas tabelas abaixo (geradas com o [pre-commit](https://pre-commit.com/) e [terraform-docs](https://terraform-docs.io/)), podemos ver maiores detalhes como dependências, versionamento utilizado e, principalmente, os INPUTS que são **requisitos** para a utilização do projeto.
 
