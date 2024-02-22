@@ -126,6 +126,7 @@ module "eks" {
   # As tags também são variáveis, do tipo map(). Opcionalmente,
   # pode ser criado um arquivo 'locals.tags', para organizar 
   # melhor a passagem dos valores. Neste exemplo, não optei por isso.
+
   tags = {
     Departamento = "Devops"
     Organizacao  = "Dellabeneta S/A"
