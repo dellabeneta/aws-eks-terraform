@@ -1,4 +1,6 @@
-# Bem-vindo(a) a Super-Módulo para EKS. Espero que aproveitem e façam bom uso dessa estrutura :]
+## Bem-vindo(a) ao 'Super-Módulo' para EKS. Este é um código Terraform completeo para provisionamento de um Cluster EKS na AWS. Ele contempla Rede, um Nodegroup, Policies, Roles, Load Balancer Controller e demais configurações necessárias para criação de um cluster 100% operacional. Espero que aproveitem e façam bom uso dessa estrutura
+
+<img src="https://drive.google.com/uc?export=view&id=1jwpV_Q0bCWpo4LXJy2q1BMgh7zEVRqj3" width="1000">
 
 Bem, todo esse trabalho não teria sido possível sem o treinamento facultado através do [Mateus Muller](https://github.com/mateusmuller), treinamento que posso indicar par todos (https://www.udemy.com/course/terraform-para-aws/?couponCode=24T4FS22124)
 Que fiquem aqui os devidos créditos!
