@@ -1,14 +1,12 @@
-### Bem-vindo(a) ao 'Super-Módulo' para EKS. Este é um código Terraform completeo para provisionamento de um Cluster EKS na AWS. Ele contempla Rede, um Nodegroup, Policies, Roles, Load Balancer Controller e demais configurações necessárias para criação de um cluster 100% operacional. Espero que aproveitem e façam bom uso dessa estrutura
+### Bem-vindo(a) ao 'Super-Módulo' para EKS. Este é um código Terraform completo para provisionamento de um Cluster EKS na AWS. Ele contempla Rede, um Node Group, Policies, Roles, Load Balancer Controller e demais configurações necessárias para criação de um cluster 100% operacional. Espero que aproveitem e façam bom uso dessa estrutura.
 
 <img src="https://drive.google.com/uc?export=view&id=1jwpV_Q0bCWpo4LXJy2q1BMgh7zEVRqj3" width="1000">
 
-Bem, todo esse trabalho não teria sido possível sem o treinamento facultado através do [Mateus Muller](https://github.com/mateusmuller), treinamento que posso indicar par todos (https://www.udemy.com/course/terraform-para-aws/?couponCode=24T4FS22124)
-Que fiquem aqui os devidos créditos!
+Todo trabalho não teria sido possível sem o treinamento do [Mateus Muller](https://github.com/mateusmuller), que indico para todos que buscam entender mais sobre módulos no Terraform (https://www.udemy.com/course/terraform-para-aws/?couponCode=24T4FS22124).
 
-Este repositório é **público** e quiser contribuir de alguma forma, pode contatar no Linkedin em: https://www.linkedin.com/in/mdellabeneta/, ficaria muito feliz com o seu contato.
+Se precisar, pode contatar no Linkedin em: https://www.linkedin.com/in/mdellabeneta/, ficaria muito feliz com o seu contato e contribuição.
 
-
-Com isso posto, vamos falar um pouco mais do que temos por aqui:
+Com isso posto, vamos falar um pouco mais do que temos por aqui. Observe a saída do comando tree em meu terminal, para uma noção macro da estrutura de diretórios e arquivos:
 
 ```
 della@desklin:~/projetos$ tree terraform-supermodule/
@@ -56,7 +54,7 @@ terraform-supermodule/
 6 directories, 34 files
 ```
 
-Nas tabelas abaixo (geradas com o [pre-commit](https://pre-commit.com/) e [terraform-docs](https://terraform-docs.io/)), podemos ver maiores detalhes como dependências, versionamento utilizado e, principalmente, os INPUTS que são **requisitos** para a utilização do projeto.
+Nas tabelas abaixo (geradas com o [pre-commit](https://pre-commit.com/) e [terraform-docs](https://terraform-docs.io/)), podemos ver maiores detalhes como dependências, versionamento utilizado e os INPUTS que são **requisitos** para a utilização do projeto.
 
 
 <!-- BEGIN_TF_DOCS -->
