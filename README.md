@@ -105,3 +105,38 @@ No resources.
 No outputs.
 <!-- END_TF_DOCS -->
 
+Veja um exemplo de um "main.tf" que você poderia criar para utilizar este projeto de forma rápida, respeitando as variáveis, inputs necessários e com backend local:
+
+```
+module "eks" {
+  source = "git@github.com:dellabeneta/terraform-supermodule.git?ref=v1.0.0"
+
+  # Variáveis necessárias (INPUTS)
+  aws_profile    = "default"
+  region         = "sa-east-1"
+  project_name   = "Marketplace"
+  eks_version    = "1.29"
+  cidr_block     = "10.0.0.0/16"
+  instance_types = "t3.medium"
+  desired_size   = "1"
+  min_size       = "1"
+  max_size       = "2"
+  
+
+  # As tags também são variáveis, do tipo map(). Opcionalmente,
+  # pode ser criado um arquivo 'locals.tags', para organizar 
+  # melhor a passagem dos valores. Neste exemplo, não optei por isso.
+  tags = {
+    Departamento = "Devops"
+    Organizacao  = "Dellabeneta S/A"
+    Projeto      = "Automatização com IaC Cluster EKS"
+    Ambiente     = "Desenvolvimento"
+  }
+}
+```
+
+,
+[]
+Michel Torres Dellabeneta
+https://linktr.ee/dellabeneta
+
