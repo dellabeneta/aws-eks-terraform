@@ -135,8 +135,6 @@ module "eks" {
 }
 ```
 
-,
-[]
 Michel Torres Dellabeneta
 https://linktr.ee/dellabeneta
 
