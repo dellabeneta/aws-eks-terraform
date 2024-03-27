@@ -115,7 +115,7 @@ module "eks" {
   region         = "REGIÃO"
   project_name   = "NOME_DO_PROJETO"
   eks_version    = "VERSÃO_DO_EKS"
-  cidr_block     = "CIDR_PARA_VPC"
+  cidr_block     = "CIDR_PARA_VPC" --> de acordo com as configurações estabelecidas no módulo de VPC, a rede deve ser necessariamente definida como /16.
   instance_types = "SIZE_DA_EC2"
   desired_size   = "1"
   min_size       = "1"
